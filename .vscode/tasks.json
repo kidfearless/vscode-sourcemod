@@ -1,21 +1,26 @@
 {
-	"label": "Compile plugin",
-	"type": "shell",
-	"presentation": {
-		"panel": "new"
-	},
-	"windows": {
-		"command": "${workspaceFolder}/scripting/spcomp.exe"
-	},
-	"args": [
-		"${file}",
-		"-v2",
-		"-i${workspaceFolder}/scripting/include/",
-		"-o${workspaceFolder}/plugins/${fileBasenameNoExtension}.smx"
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "Compile plugin",
+			"type": "shell",
+			"presentation": {
+				"panel": "new"
+			},
+			"windows": {
+				"command": "${workspaceFolder}/scripting/spcomp.exe"
+			},
+			"args": [
+				"${file}",
+				"-v2",
+				"-i${workspaceFolder}/scripting/include/",
+				"-o${workspaceFolder}/plugins/${fileBasenameNoExtension}.smx"
+			],
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			},
+			"problemMatcher": []
+		}
 	],
-	"group": {
-		"kind": "build",
-		"isDefault": true
-	},
-	"problemMatcher": []
 }
