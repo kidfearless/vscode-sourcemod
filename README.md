@@ -1,5 +1,5 @@
 # Setting up visual studio code for sourcemod projects
-This repo contains a starter template for new sourcemod projects. The compiler and includes as of writing this are from SM 1.10 Build 6462.
+This repo contains a starter template for new sourcemod projects. The compiler and includes as of writing this are from SM 1.10 Build 6501.
 
 ## Setup
 The first step is to download a copy of the repo.
